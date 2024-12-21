@@ -10,15 +10,8 @@
 pip install -r requirements.txt
 ```
 
-```python
-from city_calculator import LocalDataSource, CityDistanceCalculator
-from city_districts_data import CITY_DISTRICTS
-# 创建数据源和计算器实例
-data_source = LocalDataSource(CITY_DISTRICTS)
-calculator = CityDistanceCalculator(data_source)
-# 计算特定城市的距离
-cities = ["上海市", "杭州市"]
-calculator.process_all_cities(cities, "distances.csv")
+```bash
+python examples/basic_usage.py
 ```
 ## 支持的城市
 
